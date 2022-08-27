@@ -4,22 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This web page is made using simple HTML tags&elements">
+    <meta name="keywords" content="Basic Html Project, Dream Vacation, Teens weekly time spending">
+    <meta http-equiv="author" content="John Doe">
+    <meta http-equiv="content-language" content="en-us">
     <title>Text-box</title>
 </head>
 <body>
     <div>
-        <img src="images.png" alt="login Avatar">
-        <form action=""></form>
+        <fieldset>
+            <legend>Login Details</legend>
+            <img src="images/images.png" alt="login Avatar">
+            <form action=""></form>
 
-        <label for="Username">Username:</label>
-        <input type="text" name="Username" id="Username"><br><br>
+                <label for="Username">Username:</label>
+                <input type="text" name="Username" id="Username"><br><br>
 
-        <label for="Password">Password:</label>
-        <input type="password" name="Password" id="Password"><br><br>
+                <label for="Password">Password:</label>
+                <input type="password" name="Password" id="Password"><br><br>
+                <!-- Login Section -->
+                <div>
+                    <label for="genderQ" style="color: red;">Gender:</label><br>
+                    <input type="radio" name="genderQ" value="">
+                    Male <br>
+                    <input type="radio" name="genderQ" value="">
+                    Female <br>
+                    <input type="radio" name="genderQ" value="">
+                    I Don't Want To Specify <br><br>
+                </div>
+                <!-- Q1 -->
+        </fieldset><br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="aboutQ" style="color: red;">What Do You Do In Your Free Time?</label><br>
+                <input type="checkbox" name="aboutQ" checked="checked">
+                Spend Time On Social Media<br>
+                <input type="checkbox" name="aboutQ">
+                Hang Out With Friends<br>
+                <input type="checkbox" name="aboutQ">
+                Play Video Games<br>
+                <input type="checkbox" name="aboutQ">
+                Read Books<br>
+                <input type="checkbox" name="aboutQ">
+                Other:<br>
+                <textarea name="textarea" id="textarea" cols="20" rows="5">Describe It In Here</textarea><br><br>
+            </div>
+            <!-- Q2 -->
+    
+            <div>
+                <label for="ITperWeek" style="color: red;">How Many Hours Do You Usually Spend Time On Technology (smart phones, computers, etc.) Per Week?</label><br>
+                <input type="number" name="ITperWeek"min="0" max="50"><br><br>
+            </div>
+            <!-- Q3 -->
+        </fieldset><br>
+                
+            <div>
+                <fieldset>
+                    <legend>Dream Vacation</legend>
 
-        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        
-        <input type="submit">
+                    <label for="question1" style="color: red;">Pick A Place To Spend Your Vacation On</label><br>
+                <select>
+
+                    <option value="Spain">Spain</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="USA">USA</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Barbados">Barbados</option><br>
+
+                </select><br><br>
+                    <input type="checkbox" name="Q4">I Don't Want To Spend My Time On There:<br>
+                    <textarea name="textarea" id="textarea" cols="30" rows="1">Type A Place For Your Vacation</textarea><br><br>
+                <label for="dateForTravel" style="color: red;">Pick A Date For Your Travel</label><br>
+                <input type="date" name="dateForTravel"><br><br>
+                <label for="DaysToSpend" style="color: red;">How Many Days Do You Want To Spend There?</label><br>
+                <input type="number" name="DaysToSpend" min="1" max="30"><br><br>
+
+                </fieldset><br>
+                
+                
+            </div>
+
+
+            
+                Comment About Anything!<br>
+                <textarea name="textarea" id="textarea" cols="50" rows="20"></textarea><br>
+                
+                <input type="submit" value="Kaydet">
     </div>
 </body>
 </html>
