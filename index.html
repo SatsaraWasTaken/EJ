@@ -8,13 +8,17 @@
     <meta name="keywords" content="Basic Html Project, Dream Vacation, Teens weekly time spending">
     <meta http-equiv="author" content="John Doe">
     <meta http-equiv="content-language" content="en-us">
-    <title>Text-box</title>
+    <title>Html Project</title>
 </head>
 <body>
     <div>
         <fieldset>
+            <div style="float: right;width: 450px;height:100px ; margin: 0; padding: 0;">
+                <audio src="essentials/Read All Over - Nathan Moore.mp3" controls autoplay loop draggable="true" style="float: right;"></audio>
+                <p style="float: left;">Sorry for the music. I had to do it for the better learning experience :)</p><br>
+            </div>
             <legend>Login Details</legend>
-            <img src="images/images.png" alt="login Avatar">
+            <img src="essentials/images.png" alt="login Avatar" title="Login Avatar">
             <form action=""></form>
 
                 <label for="Username">Username:</label>
@@ -82,16 +86,23 @@
                 <input type="number" name="DaysToSpend" min="1" max="30"><br><br>
 
                 </fieldset><br>
-                
-                
+
+                <label for="randomText" style="color:red;">Random Stuff:</label><br>
+                <iframe src="bold.html" frameborder="1" width="500" height="145" name="randomText" id="randomText"></iframe><br>
+
+                <a href="italic.html" target="randomText">Italic ------&gl;</a><br><br>
+
             </div>
 
-
-            
-                Comment About Anything!<br>
-                <textarea name="textarea" id="textarea" cols="50" rows="20"></textarea><br>
+            <fieldset>
+                <legend>Closing</legend>
+                <label for="textarea2">Comment About Anything!</label><br>
+                <video src="essentials/HTML Tutorial for Beginners - 28 - Video element - YouTube - Google Chrome 2022-08-28 16-03-35.mp4" width="444" controls style="float: right;"></video>
+                <textarea name="textarea2" id="textarea" cols="45" rows="15"></textarea>
+                <p>P.S. The Video is in alignment with The Textarea</p><br><br>
                 
                 <input type="submit" value="Kaydet">
+            </fieldset>
     </div>
 </body>
 </html>
